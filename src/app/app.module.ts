@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FirebaseService } from './services/firebase.service';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FirebaseService } from './services/firebase.service';
     }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule
+    DefaultModule,
+    AngularFireDatabaseModule, // for database
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
